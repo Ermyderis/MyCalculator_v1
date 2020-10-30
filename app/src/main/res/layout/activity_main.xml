@@ -1,77 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:shrinkColumns="*">
 
-    <TableLayout
-     android:layout_height="match_parent"
-     android:layout_width="match_parent"
-        app:layout_constraintBaseline_toBaselineOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintEnd_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" >
+
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="453dp"
             android:layout_weight="3">
     <TextView
-        android:id="@+id/Screen"
+        android:id="@+id/screen"
         android:layout_height="match_parent"
         android:layout_width="match_parent"
         android:text="0"
         android:layout_margin="10dp"
         android:layout_weight="2"
-        android:layout_gravity="right|center"
-        android:textSize="30sp" />
+        android:gravity="center|right"
+        android:textSize="40sp" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
+
             >
+
             <Button
                 android:id="@+id/buttonMC"
                 android:text="MC"
                 android:layout_height="match_parent"
+                android:textSize="25sp"
 
 
+                />
 
-                ></Button>
             <Button
                 android:id="@+id/buttonMR"
                 android:text="MR"
                 android:layout_height="match_parent"
+                android:textSize="25sp"
 
 
+                />
 
-                ></Button>
             <Button
                 android:id="@+id/buttonMS"
                 android:text="MS"
                 android:layout_height="match_parent"
+                android:textSize="25sp"
 
 
+                />
 
-                ></Button>
             <Button
                 android:id="@+id/buttonMplus"
                 android:text="M+"
                 android:layout_height="match_parent"
+                android:textSize="25sp"
 
 
+                />
 
-                ></Button>
             <Button
-                android:id="@+id/buttonAminus"
+                android:id="@+id/buttonMminus"
                 android:text="M-"
                 android:layout_height="match_parent"
+                android:textSize="25sp"
 
 
-                ></Button>
+                />
 
         </TableRow>
         <TableRow
@@ -83,14 +85,14 @@
                 android:text="CE"
                 android:layout_column="1"
                 android:layout_height="match_parent"
-
+                android:textSize="25sp"
                 />
             <Button
                 android:id="@+id/buttonDEL"
                 android:text="DEL"
                 android:layout_column="2"
                 android:layout_height="match_parent"
-
+                android:textSize="25sp"
                 />
 
 
@@ -101,45 +103,41 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             >
+
             <Button
                 android:id="@+id/button7"
                 android:text="7"
                 android:layout_height="match_parent"
+                android:textSize="25sp"
+                />
 
-
-
-                ></Button>
             <Button
                 android:id="@+id/button8"
                 android:text="8"
                 android:layout_height="match_parent"
+                android:textSize="25sp"
+                />
 
-
-
-                ></Button>
             <Button
                 android:id="@+id/button9"
                 android:text="9"
                 android:layout_height="match_parent"
+                android:textSize="25sp"
+                />
 
-
-
-                ></Button>
             <Button
-                android:id="@+id/buttonDevision"
+                android:id="@+id/buttonDivision"
                 android:text="/"
                 android:layout_height="match_parent"
+                android:textSize="25sp"
+                />
 
-
-
-                ></Button>
             <Button
                 android:id="@+id/buttonProcent"
                 android:text="%"
                 android:layout_height="match_parent"
-
-
-                ></Button>
+                android:textSize="25sp"
+                />
 
         </TableRow>
 
@@ -148,45 +146,41 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             >
+
             <Button
                 android:id="@+id/button4"
                 android:text="4"
                 android:layout_height="match_parent"
+                android:textSize="25sp"
+                />
 
-
-
-                ></Button>
             <Button
                 android:id="@+id/button5"
                 android:text="5"
                 android:layout_height="match_parent"
+                android:textSize="25sp"
+                />
 
-
-
-                ></Button>
             <Button
                 android:id="@+id/button6"
                 android:text="6"
                 android:layout_height="match_parent"
+                android:textSize="25sp"
+                />
 
-
-
-                ></Button>
             <Button
                 android:id="@+id/buttonMultiplication"
                 android:text="*"
                 android:layout_height="match_parent"
+                android:textSize="25sp"
+                />
 
-
-
-                ></Button>
             <Button
-                android:id="@+id/button1x"
-                android:text="1/x"
+                android:id="@+id/buttonroot"
+                android:text="√"
                 android:layout_height="match_parent"
-
-
-                ></Button>
+                android:textSize="25sp"
+                />
 
         </TableRow>
 
@@ -195,45 +189,41 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             >
+
             <Button
                 android:id="@+id/button1"
                 android:text="1"
                 android:layout_height="match_parent"
+                android:textSize="25sp"
+                />
 
-
-
-                ></Button>
             <Button
                 android:id="@+id/button2"
                 android:text="2"
                 android:layout_height="match_parent"
+                android:textSize="25sp"
+                />
 
-
-
-                ></Button>
             <Button
                 android:id="@+id/button3"
                 android:text="3"
                 android:layout_height="match_parent"
+                android:textSize="25sp"
+                />
 
-
-
-                ></Button>
             <Button
                 android:id="@+id/buttonMinus"
                 android:text="-"
                 android:layout_height="match_parent"
+                android:textSize="25sp"
+                />
 
-
-
-                ></Button>
             <Button
                 android:id="@+id/buttonPlus"
                 android:text="+"
                 android:layout_height="match_parent"
-
-
-                ></Button>
+                android:textSize="25sp"
+                />
 
         </TableRow>
 
@@ -242,24 +232,30 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             >
+
             <Button
                 android:id="@+id/button0"
                 android:text="0"
                 android:layout_span="2"
                 android:layout_height="match_parent"
+                android:textSize="25sp"
+                />
+            <Button
+                android:id="@+id/buttonDot"
+                android:text="."
+                android:layout_span="1"
+                android:layout_height="match_parent"
+                android:textSize="25sp"
+                />
 
-
-
-                ></Button>
             <Button
                 android:id="@+id/buttonEqual"
                 android:text="="
-                android:layout_span="3"
+                android:layout_span="2"
                 android:layout_height="match_parent"
-
-
-
-                ></Button>
+                android:background="@color/orange"
+                android:textSize="25sp"
+                />
 
 
         </TableRow>
@@ -267,5 +263,3 @@
 
 
     </TableLayout>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
