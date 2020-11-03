@@ -3,6 +3,7 @@ package com.example.mycalculator_v1;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -14,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     Button buttonDot, button0, button1, button2, button3, button4, button5, button6, button7, button8, button9, buttonCE, buttonDEL, buttonDivision, buttonMultiplication, buttonroot, buttonMinus, buttonPlus, buttonEqual;
     TextView screen;
     String oldnumber;
-    String op = "+";
+    String op = "0";
     boolean isNewOp = true;
     int todel = 0;
     @Override
@@ -137,6 +138,7 @@ public class MainActivity extends AppCompatActivity {
         f = f * (-1);
         number = String.valueOf(f);
         screen.setText(number);
+        screen.setMovementMethod(new ScrollingMovementMethod());
     }
 
 
@@ -175,8 +177,13 @@ public class MainActivity extends AppCompatActivity {
                     result = 0;
                 }
                 break;
+            case "0":
+
+                break;
         }
         screen.setText(result+"");
+        screen.setMovementMethod(new ScrollingMovementMethod());
+        isNewOp = true;
     }
 
     public void operatoreventroot(View view) {
@@ -184,6 +191,7 @@ public class MainActivity extends AppCompatActivity {
         if (root > 0) {
             double result = Math.sqrt(root);
             screen.setText(result + "");
+            screen.setMovementMethod(new ScrollingMovementMethod());
             isNewOp = true;
         }
         else Toast.makeText(MainActivity.this, "Cannot pull the root from a negative number", Toast.LENGTH_SHORT).show();
@@ -192,6 +200,7 @@ public class MainActivity extends AppCompatActivity {
     public void operatoreventprocent(View view) {
         double procent = Double.parseDouble(screen.getText().toString())/100;
         screen.setText(procent + "");
+        screen.setMovementMethod(new ScrollingMovementMethod());
         isNewOp = true;
     }
 }
