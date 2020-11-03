@@ -12,7 +12,7 @@ import java.lang.Math;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button buttonDot, button0, button1, button2, button3, button4, button5, button6, button7, button8, button9, buttonCE, buttonDEL, buttonDivision, buttonMultiplication, buttonroot, buttonMinus, buttonPlus, buttonEqual;
+
     TextView screen;
     String oldnumber;
     String op = "0";

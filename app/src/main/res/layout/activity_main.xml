@@ -95,6 +95,7 @@
             <Button
                 android:id="@+id/buttonDivision"
                 android:text="/"
+                android:backgroundTint="#01ADC3"
                 android:onClick="operatorevent"
                 android:layout_height="match_parent"
                 android:textSize="25sp"
@@ -103,6 +104,7 @@
             <Button
                 android:id="@+id/buttonProcent"
                 android:text="%"
+                android:backgroundTint="#01ADC3"
                 android:onClick="operatoreventprocent"
                 android:layout_height="match_parent"
                 android:textSize="25sp"
@@ -143,6 +145,7 @@
             <Button
                 android:id="@+id/buttonMultiplication"
                 android:text="*"
+                android:backgroundTint="#01ADC3"
                 android:onClick="operatorevent"
                 android:layout_height="match_parent"
                 android:textSize="25sp"
@@ -151,6 +154,7 @@
             <Button
                 android:id="@+id/buttonroot"
                 android:text="√"
+                android:backgroundTint="#01ADC3"
                 android:onClick="operatoreventroot"
                 android:layout_height="match_parent"
                 android:textSize="25sp"
@@ -194,11 +198,13 @@
                 android:onClick="operatorevent"
                 android:layout_height="match_parent"
                 android:textSize="25sp"
+                android:backgroundTint="#01ADC3"
                 />
 
             <Button
                 android:id="@+id/buttonPlus"
                 android:text="+"
+                android:backgroundTint="#01ADC3"
                 android:onClick="operatorevent"
                 android:layout_height="match_parent"
                 android:textSize="25sp"
@@ -235,7 +241,7 @@
                 android:onClick="equalEvent"
                 android:layout_span="2"
                 android:layout_height="match_parent"
-                android:background="@color/orange"
+                android:backgroundTint="#FFA647"
                 android:textSize="25sp"
                 />
 
