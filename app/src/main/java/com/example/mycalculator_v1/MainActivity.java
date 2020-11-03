@@ -6,13 +6,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
+import java.lang.Math;
 
 public class MainActivity extends AppCompatActivity {
 
     Button buttonDot, button0, button1, button2, button3, button4, button5, button6, button7, button8, button9, buttonCE, buttonDEL, buttonDivision, buttonMultiplication, buttonroot, buttonMinus, buttonPlus, buttonEqual;
     TextView screen;
+    String oldnumber;
+    String op = "+";
     boolean isNewOp = true;
-    boolean oneDot = true;
     int todel = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -108,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
     public void acEvent(View view) {
         screen.setText("0");
         isNewOp = true;
-        oneDot = true;
+
     }
 
     public void numberDel(View view) {
@@ -134,5 +137,61 @@ public class MainActivity extends AppCompatActivity {
         f = f * (-1);
         number = String.valueOf(f);
         screen.setText(number);
+    }
+
+
+
+    public void operatorevent(View view) {
+        isNewOp = true;
+        oldnumber = screen.getText().toString();
+        switch(view.getId()){
+            case R.id.buttonPlus: op = "+"; break;
+            case R.id.buttonMinus: op = "-"; break;
+            case R.id.buttonMultiplication: op = "*"; break;
+            case R.id.buttonDivision: op = "/"; break;
+
+        }
+    }
+
+    public void equalEvent(View view) {
+        String newNumber = screen.getText().toString();
+        double result = 0;
+        switch (op){
+            case "+":
+            result = Double.parseDouble(oldnumber) + Double.parseDouble(newNumber);
+            break;
+            case "-":
+                result = Double.parseDouble(oldnumber) - Double.parseDouble(newNumber);
+                break;
+            case "*":
+                result = Double.parseDouble(oldnumber) * Double.parseDouble(newNumber);
+                break;
+            case "/":
+                if(Double.parseDouble(newNumber) != 0) {
+                    result = Double.parseDouble(oldnumber) / Double.parseDouble(newNumber);
+                }
+                else {
+                    Toast.makeText(MainActivity.this, "division from zero is not possible", Toast.LENGTH_SHORT).show();
+                    result = 0;
+                }
+                break;
+        }
+        screen.setText(result+"");
+    }
+
+    public void operatoreventroot(View view) {
+        double root = Double.parseDouble(screen.getText().toString());
+        if (root > 0) {
+            double result = Math.sqrt(root);
+            screen.setText(result + "");
+            isNewOp = true;
+        }
+        else Toast.makeText(MainActivity.this, "Cannot pull the root from a negative number", Toast.LENGTH_SHORT).show();
+    }
+
+    public void operatoreventprocent(View view) {
+        double procent = Double.parseDouble(screen.getText().toString())/100;
+        screen.setText(procent + "");
+        isNewOp = true;
     }
 }

@@ -19,6 +19,7 @@
         android:text="0"
         android:layout_margin="10dp"
         android:layout_weight="2"
+        android:scrollbars = "vertical"
         android:gravity="center|right"
         android:textSize="40sp" />
         </TableRow>
@@ -143,6 +144,7 @@
             <Button
                 android:id="@+id/buttonDivision"
                 android:text="/"
+                android:onClick="operatorevent"
                 android:layout_height="match_parent"
                 android:textSize="25sp"
                 />
@@ -150,6 +152,7 @@
             <Button
                 android:id="@+id/buttonProcent"
                 android:text="%"
+                android:onClick="operatoreventprocent"
                 android:layout_height="match_parent"
                 android:textSize="25sp"
                 />
@@ -189,6 +192,7 @@
             <Button
                 android:id="@+id/buttonMultiplication"
                 android:text="*"
+                android:onClick="operatorevent"
                 android:layout_height="match_parent"
                 android:textSize="25sp"
                 />
@@ -196,6 +200,7 @@
             <Button
                 android:id="@+id/buttonroot"
                 android:text="√"
+                android:onClick="operatoreventroot"
                 android:layout_height="match_parent"
                 android:textSize="25sp"
                 />
@@ -235,6 +240,7 @@
             <Button
                 android:id="@+id/buttonMinus"
                 android:text="-"
+                android:onClick="operatorevent"
                 android:layout_height="match_parent"
                 android:textSize="25sp"
                 />
@@ -242,6 +248,7 @@
             <Button
                 android:id="@+id/buttonPlus"
                 android:text="+"
+                android:onClick="operatorevent"
                 android:layout_height="match_parent"
                 android:textSize="25sp"
                 />
@@ -274,6 +281,7 @@
             <Button
                 android:id="@+id/buttonEqual"
                 android:text="="
+                android:onClick="equalEvent"
                 android:layout_span="2"
                 android:layout_height="match_parent"
                 android:background="@color/orange"
