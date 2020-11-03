@@ -60,6 +60,7 @@
             <Button
                 android:id="@+id/buttonMplus"
                 android:text="M+"
+                android:onClick="numberEvent"
                 android:layout_height="match_parent"
                 android:textSize="25sp"
 
@@ -69,6 +70,7 @@
             <Button
                 android:id="@+id/buttonMminus"
                 android:text="M-"
+                android:onClick="numberEvent"
                 android:layout_height="match_parent"
                 android:textSize="25sp"
 
@@ -81,8 +83,9 @@
             android:layout_height="match_parent"
             android:layout_weight="1">
             <Button
-                android:id="@+id/buttonCE"
-                android:text="CE"
+                android:id="@+id/buttonAC"
+                android:text="AC"
+                android:onClick="acEvent"
                 android:layout_column="1"
                 android:layout_height="match_parent"
                 android:textSize="25sp"
@@ -90,7 +93,16 @@
             <Button
                 android:id="@+id/buttonDEL"
                 android:text="DEL"
+                android:onClick="numberDel"
                 android:layout_column="2"
+                android:layout_height="match_parent"
+                android:textSize="25sp"
+                />
+            <Button
+                android:id="@+id/buttonPlusMinus"
+                android:text="+-"
+                android:onClick="numbersignchange"
+                android:layout_column="4"
                 android:layout_height="match_parent"
                 android:textSize="25sp"
                 />
@@ -107,6 +119,7 @@
             <Button
                 android:id="@+id/button7"
                 android:text="7"
+                android:onClick="numberEvent"
                 android:layout_height="match_parent"
                 android:textSize="25sp"
                 />
@@ -114,6 +127,7 @@
             <Button
                 android:id="@+id/button8"
                 android:text="8"
+                android:onClick="numberEvent"
                 android:layout_height="match_parent"
                 android:textSize="25sp"
                 />
@@ -121,6 +135,7 @@
             <Button
                 android:id="@+id/button9"
                 android:text="9"
+                android:onClick="numberEvent"
                 android:layout_height="match_parent"
                 android:textSize="25sp"
                 />
@@ -150,6 +165,7 @@
             <Button
                 android:id="@+id/button4"
                 android:text="4"
+                android:onClick="numberEvent"
                 android:layout_height="match_parent"
                 android:textSize="25sp"
                 />
@@ -157,6 +173,7 @@
             <Button
                 android:id="@+id/button5"
                 android:text="5"
+                android:onClick="numberEvent"
                 android:layout_height="match_parent"
                 android:textSize="25sp"
                 />
@@ -164,6 +181,7 @@
             <Button
                 android:id="@+id/button6"
                 android:text="6"
+                android:onClick="numberEvent"
                 android:layout_height="match_parent"
                 android:textSize="25sp"
                 />
@@ -193,6 +211,7 @@
             <Button
                 android:id="@+id/button1"
                 android:text="1"
+                android:onClick="numberEvent"
                 android:layout_height="match_parent"
                 android:textSize="25sp"
                 />
@@ -200,6 +219,7 @@
             <Button
                 android:id="@+id/button2"
                 android:text="2"
+                android:onClick="numberEvent"
                 android:layout_height="match_parent"
                 android:textSize="25sp"
                 />
@@ -207,6 +227,7 @@
             <Button
                 android:id="@+id/button3"
                 android:text="3"
+                android:onClick="numberEvent"
                 android:layout_height="match_parent"
                 android:textSize="25sp"
                 />
@@ -236,6 +257,7 @@
             <Button
                 android:id="@+id/button0"
                 android:text="0"
+                android:onClick="numberEvent"
                 android:layout_span="2"
                 android:layout_height="match_parent"
                 android:textSize="25sp"
@@ -243,6 +265,7 @@
             <Button
                 android:id="@+id/buttonDot"
                 android:text="."
+                android:onClick="numberEvent"
                 android:layout_span="1"
                 android:layout_height="match_parent"
                 android:textSize="25sp"
